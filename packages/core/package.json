@@ -1,0 +1,29 @@
+{
+    "name": "mermaidui-core",
+    "version": "0.1.0",
+    "main": "dist/core.cjs.js",
+    "module": "dist/core.esm.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "rollup -c",
+        "test": "vitest --run"
+    },
+    "author": "Ray Tien",
+    "peerDependencies": {
+        "mermaid": "^10.0.0"
+    },
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^25.0.0",
+        "@rollup/plugin-node-resolve": "^15.0.0",
+        "@rollup/plugin-typescript": "^11.0.0",
+        "@types/node": "^20.0.0",
+        "jsdom": "^21.1.0",
+        "mermaid": "^10.0.0",
+        "rollup": "^3.0.0",
+        "rollup-plugin-terser": "^7.0.2",
+        "typescript": "^5.0.0",
+        "vitest": "^0.34.0"
+    },
+    "license": "MIT",
+    "dependencies": {}
+}

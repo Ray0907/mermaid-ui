@@ -1,0 +1,17 @@
+{
+  "name": "mermaidui",
+  "description": "CLI, core library & Mermaid.js UI components compilable into framework-agnostic Web Components.",
+  "author": "Ray Tien",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build --stream",
+    "test": "lerna run test"
+  },
+  "devDependencies": {
+    "lerna": "^6.4.1"
+  }
+}
