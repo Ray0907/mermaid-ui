@@ -2,9 +2,9 @@
   "name": "mermaidui",
   "version": "0.1.0",
   "description": "CLI, core library & Mermaid.js UI components compilable into framework-agnostic Web Components.",
-  "main": "dist/my-mermaid-auto.cjs.js",
-  "module": "dist/my-mermaid-auto.esm.js",
-  "unpkg": "dist/my-mermaid-auto.umd.js",
+  "main": "dist/core.cjs.js",
+  "module": "dist/core.esm.js",
+  "unpkg": "dist/core.umd.js",
   "bin": {
     "mermaidui": "dist/cli.js"
   },

@@ -9,12 +9,15 @@ module.exports = {
     plugins: [
         resolve(),
         commonjs(),
-        typescript({ tsconfig: './tsconfig.json' }),
+        typescript({ 
+            tsconfig: './tsconfig.json',
+            sourceMap: true
+        }),
         terser()
     ],
     output: [
-        { file: 'dist/core.esm.js', format: 'esm' },
-        { file: 'dist/core.cjs.js', format: 'cjs', exports: 'named' },
-        { file: 'dist/core.umd.js', format: 'umd', name: 'MyMermaidCore', globals: { mermaid: 'mermaid' } }
+        { file: 'dist/core.esm.js', format: 'esm', sourcemap: true },
+        { file: 'dist/core.cjs.js', format: 'cjs', exports: 'named', sourcemap: true },
+        { file: 'dist/core.umd.js', format: 'umd', name: 'MyMermaidCore', globals: { mermaid: 'mermaid' }, sourcemap: true }
     ]
 };
