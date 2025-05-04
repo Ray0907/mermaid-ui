@@ -30,5 +30,3 @@ export function initMermaidUI(options: InitOptions): void {
         observeDOM(options.selector, options.mermaidConfig);
     }
 }
-
-export { renderOne };

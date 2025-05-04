@@ -1,4 +1,5 @@
 import mermaid from 'mermaid';
+import { renderOne } from 'mermaidui-core';
 
 /**
  * Render a single Mermaid code string to SVG
@@ -14,4 +15,4 @@ export async function renderOne(
         const { svg } = await mermaid.render(renderId, code);
         return svg;
     } catch (err) {
-        return `<pre style=\
+        return `<pre style="">`;

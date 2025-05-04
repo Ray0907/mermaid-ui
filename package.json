@@ -1,17 +1,35 @@
 {
   "name": "mermaidui",
+  "version": "0.1.0",
   "description": "CLI, core library & Mermaid.js UI components compilable into framework-agnostic Web Components.",
+  "main": "dist/my-mermaid-auto.cjs.js",
+  "module": "dist/my-mermaid-auto.esm.js",
+  "unpkg": "dist/my-mermaid-auto.umd.js",
+  "bin": {
+    "mermaidui": "dist/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ray0907/mermaid-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ray0907/mermaid-ui/issues"
+  },
+  "homepage": "https://github.com/Ray0907/mermaid-ui#readme",
   "author": "Ray Tien",
-  "private": true,
+  "private": false,
+  "license": "MIT",
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build --stream",
-    "test": "lerna run test"
+    "test": "lerna run test",
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "lerna": "^6.4.1"
-  }
+  },
+  "packageManager": "pnpm@10.9.0+sha512.0486e394640d3c1fb3c9d43d49cf92879ff74f8516959c235308f5a8f62e2e19528a65cdc2a3058f587cde71eba3d5b56327c8c33a97e4c4051ca48a10ca2d5f"
 }

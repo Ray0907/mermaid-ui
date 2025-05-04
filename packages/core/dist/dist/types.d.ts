@@ -10,3 +10,4 @@ export interface RenderOptions {
     /** Mermaid.initialize config for single render */
     mermaidConfig?: Record<string, any>;
 }
+//# sourceMappingURL=types.d.ts.map
