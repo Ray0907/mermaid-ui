@@ -12,9 +12,11 @@ module.exports = {
         typescript({ 
             tsconfig: './tsconfig.json',
             sourceMap: true,
+            declaration: true,
+            declarationDir: './dist',
             compilerOptions: {
                 module: "ESNext",
-                target: "ES2018",
+                target: "ES2020",
                 lib: ["ESNext", "DOM"],
                 moduleResolution: "node"
             }
@@ -24,6 +26,6 @@ module.exports = {
     output: [
         { file: 'dist/core.esm.js', format: 'esm', sourcemap: true },
         { file: 'dist/core.cjs.js', format: 'cjs', exports: 'named', sourcemap: true },
-        { file: 'dist/core.umd.js', format: 'umd', name: 'MyMermaidCore', globals: { mermaid: 'mermaid' }, sourcemap: true }
+        { file: 'dist/core.umd.js', format: 'umd', name: 'MermaidUICore', globals: { mermaid: 'mermaid' }, sourcemap: true }
     ]
 };
