@@ -1,6 +1,6 @@
 {
   "name": "@raytien/mermaid-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CLI, core library & Mermaid.js UI components compilable into framework-agnostic Web Components.",
   "main": "dist/core.cjs.js",
   "module": "dist/core.esm.js",
