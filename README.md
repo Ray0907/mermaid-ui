@@ -2,7 +2,6 @@
 
 A framework-agnostic Mermaid diagram auto-renderer for
 
-- **Browser** via UMD/ESM
 - **SSR** in Node.js
 
 ## Workspace Packages
@@ -35,22 +34,13 @@ pnpm build
 
 # Run tests across all packages
 pnpm test
-
-## (Optional) Lint core package
-# (if ESLint configured)
-# pnpm --filter mermaidui-core lint
 ```
 
 ### Development per package
 
 ```bash
-# Core package
-cd packages/core
-pnpm build
-pnpm test
-
 # UI demo
-cd ../ui
+cd packages/ui
 pnpm dev       # start Vite server on http://localhost:5173
 pnpm build     # produce static demo in dist/
 ```

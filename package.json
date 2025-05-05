@@ -36,5 +36,10 @@
   "keywords": [],
   "dependencies": {
     "mermaid": "^10.9.3"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.6",
+    "tslib": "^2.8.1",
+    "typescript": "^5.8.3"
   }
 }
