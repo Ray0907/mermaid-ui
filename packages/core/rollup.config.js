@@ -11,7 +11,13 @@ module.exports = {
         commonjs(),
         typescript({ 
             tsconfig: './tsconfig.json',
-            sourceMap: true
+            sourceMap: true,
+            compilerOptions: {
+                module: "ESNext",
+                target: "ES2018",
+                lib: ["ESNext", "DOM"],
+                moduleResolution: "node"
+            }
         }),
         terser()
     ],
