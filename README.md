@@ -4,12 +4,10 @@ A framework-agnostic Mermaid diagram auto-renderer for
 
 - **Browser** via UMD/ESM
 - **SSR** in Node.js
-- **CLI** for batch SVG export
 
 ## Workspace Packages
 
 - **mermaidui-core** – Core rendering library (ESM/CJS/UMD, SSR, DOM observer).
-- **mermaidui-cli** – Command-line tool to convert Mermaid code to SVG.
 - **mermaidui** – Vite-powered browser demo and playground.
 
 ---
@@ -51,11 +49,6 @@ cd packages/core
 pnpm build
 pnpm test
 
-# CLI package
-cd ../cli
-pnpm build
-pnpm test
-
 # UI demo
 cd ../ui
 pnpm dev       # start Vite server on http://localhost:5173
@@ -76,24 +69,6 @@ initMermaidUI({ selector: ".mermaid", observer: true });
 
 // Render a single code string
 const svg = await renderOne("graph TD; A-->B;", "myId");
-```
-
-### CLI Tool
-
-```bash
-# install CLI globally
-yarn global add mermaid-ui-cli
-# or install globally with pnpm
-pnpm add -g mermaid-ui-cli
-
-# Convert file.mmd to file.svg
-mermaidui -i file.mmd -o file.svg
-
-# Read from STDIN
-cat file.mmd | mermaidui > file.svg
-
-# Pass custom Mermaid config
-mermaidui -i chart.mmd -o chart.svg -c '{"theme":"forest"}'
 ```
 
 ### UI Demo
