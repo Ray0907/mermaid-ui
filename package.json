@@ -38,7 +38,6 @@
     "mermaid": "^10.9.3"
   },
   "devDependencies": {
-    "@mermaid-js/mermaid-cli": "^11.4.2",
-    "jsdom": "^21.1.2"
+    "@mermaid-js/mermaid-cli": "^11.4.2"
   }
 }
